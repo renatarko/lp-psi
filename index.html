@@ -1,0 +1,666 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Landing Page Profissional para Psicólogos | Renata Karolina</title>
+  <meta name="description" content="Fortaleça sua presença online com uma landing page profissional que transmite confiança e facilita o contato com novos pacientes. Condição especial de agosto: R$ 999, entrega em até 10 dias úteis." />
+
+  <meta name="author" content="Renata Karolina" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#603638" />
+
+  <!-- ═══════════════ Open Graph (WhatsApp, Facebook, LinkedIn, Instagram) ═══════════════ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Renata Karolina | Desenvolvedora Web" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:title" content="Landing Page Profissional para Psicólogos" />
+  <meta property="og:description" content="Uma página profissional que transmite confiança e facilita o contato com novos pacientes. Condição especial de agosto." />
+
+  <!-- URLs absolutas: WhatsApp, Facebook e LinkedIn não resolvem caminho
+       relativo e mostrariam o link sem imagem.
+       PNG, não WebP: WhatsApp e LinkedIn não renderizam WebP em prévia. -->
+  <meta property="og:url" content="https://promocaopsi.rerko.net/" />
+  <meta property="og:image" content="https://promocaopsi.rerko.net/public/og-image.png" />
+  <meta property="og:image:secure_url" content="https://promocaopsi.rerko.net/public/og-image.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Notebook e celular exibindo a landing page de uma psicóloga, com a chamada: Valorize também a sua presença digital." />
+
+  <!-- ═══════════════ X / Twitter ═══════════════ -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Landing Page Profissional para Psicólogos" />
+  <meta name="twitter:description" content="Uma página profissional que transmite confiança e facilita o contato com novos pacientes. Condição especial de agosto." />
+  <meta name="twitter:image" content="https://promocaopsi.rerko.net/public/og-image.png" />
+  <meta name="twitter:image:alt" content="Notebook e celular exibindo a landing page de uma psicóloga, com a chamada: Valorize também a sua presença digital." />
+
+  <link rel="canonical" href="https://promocaopsi.rerko.net/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="public/styles.css" />
+</head>
+<body>
+  <!-- ícones reusados na página via <use href="#..."> -->
+  <svg width="0" height="0" class="absolute" aria-hidden="true">
+    <symbol id="ico-check" viewBox="0 0 20 20" fill="none">
+      <circle cx="10" cy="10" r="9" fill="#F2EDE7" stroke="#9CBEAE" stroke-width="1.4" />
+      <path d="M6.3 10.3l2.5 2.5 5-5.2" stroke="#5E8A73" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+    </symbol>
+    <symbol id="ico-chevron" viewBox="0 0 20 20" fill="none">
+      <path d="M5.5 7.75L10 12.25l4.5-4.5" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" />
+    </symbol>
+    <symbol id="ico-menu" viewBox="0 0 24 24" fill="none">
+      <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" />
+    </symbol>
+    <symbol id="ico-close" viewBox="0 0 24 24" fill="none">
+      <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" />
+    </symbol>
+  </svg>
+
+  <!-- sentinela: fica 24px abaixo do topo do documento e avisa o script
+       quando a página deixa de estar no topo -->
+  <span data-topo aria-hidden="true" class="absolute left-0 top-6 h-px w-px"></span>
+
+  <!-- ═══════════════════════════ HEADER ═══════════════════════════ -->
+  <!-- fixo: transparente sobre o hero e ganha fundo sólido (.is-stuck) ao rolar,
+       senão os links brancos sumiriam nas seções creme -->
+  <header data-header class="fixed inset-x-0 top-0 z-50 transition-colors duration-300">
+    <div class="relative mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-6">
+
+      <a href="#inicio" class="flex shrink-0 items-center gap-2.5 rounded-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-sage">
+        <img src="public/renata.webp" alt="" width="752" height="752"
+             class="h-9 w-9 rounded-full object-cover ring-1 ring-white/25" />
+        <span class="text-sm font-semibold text-white">Renata Karolina</span>
+      </a>
+
+      <nav aria-label="Navegação principal" class="hidden md:block">
+        <ul class="flex items-center gap-7">
+          <li><a href="#inicio" class="nav-link">Início</a></li>
+          <li><a href="#receber" class="nav-link">O que inclui</a></li>
+          <li><a href="#brinde" class="nav-link">Brinde</a></li>
+          <li><a href="#oferta" class="nav-link">Oferta</a></li>
+          <li><a href="#faq" class="nav-link">Dúvidas</a></li>
+        </ul>
+      </nav>
+
+      <a data-wa
+         class="hidden shrink-0 rounded-lg bg-sage px-4 py-2 text-sm font-semibold text-wine-deep transition hover:brightness-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white md:inline-block">
+        Fale comigo
+      </a>
+
+      <!-- menu mobile: <details> nativo, mesmo padrão do FAQ -->
+      <details data-menu class="group md:hidden">
+        <summary class="flex h-10 w-10 cursor-pointer list-none items-center justify-center rounded-lg text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sage"
+                 aria-label="Abrir menu de navegação">
+          <svg class="h-6 w-6 group-open:hidden" aria-hidden="true"><use href="#ico-menu" /></svg>
+          <svg class="hidden h-6 w-6 group-open:block" aria-hidden="true"><use href="#ico-close" /></svg>
+        </summary>
+
+        <nav aria-label="Navegação principal" class="absolute inset-x-0 top-full border-t border-white/10 bg-wine-deep px-6 pb-6 pt-1 shadow-2xl">
+          <ul>
+            <li><a href="#inicio" class="block border-b border-white/10 py-3.5 text-sm font-medium text-white/85">Início</a></li>
+            <li><a href="#receber" class="block border-b border-white/10 py-3.5 text-sm font-medium text-white/85">O que inclui</a></li>
+            <li><a href="#brinde" class="block border-b border-white/10 py-3.5 text-sm font-medium text-white/85">Brinde</a></li>
+            <li><a href="#oferta" class="block border-b border-white/10 py-3.5 text-sm font-medium text-white/85">Oferta</a></li>
+            <li><a href="#faq" class="block py-3.5 text-sm font-medium text-white/85">Dúvidas</a></li>
+          </ul>
+          <a data-wa
+             class="mt-5 block rounded-lg bg-sage px-4 py-3 text-center text-sm font-semibold text-wine-deep">
+            Fale comigo no WhatsApp
+          </a>
+        </nav>
+      </details>
+
+    </div>
+  </header>
+
+
+  <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+  <section id="inicio" class="relative overflow-hidden bg-wine pt-16">
+    <div class="pointer-events-none absolute -right-[38%] top-[78%] aspect-square w-[125%] -translate-y-1/2 rounded-full bg-terra md:left-[45.9%] md:right-auto md:top-1/2 md:w-[86.7%]" aria-hidden="true"></div>
+    <!-- Texto e mockup são posicionados por flex. As medidas em cqw vêm do layout de
+         referência (1280×936), então a composição escala junto em qualquer largura. -->
+    <div class="@container relative mx-auto w-full max-w-[1280px]">
+
+      <!-- ── decorativos ── -->
+      <div class="watermark pointer-events-none absolute -left-[6%] -top-[2%] select-none text-[9cqw] font-bold leading-[1.19] tracking-tight md:text-[4.45cqw]" aria-hidden="true">
+        <div>PROMOÇÃO</div><div>PROMOÇÃO</div><div>PROMOÇÃO</div><div>PROMOÇÃO</div>
+        <div>PROMOÇÃO</div><div>PROMOÇÃO</div><div>PROMOÇÃO</div><div>PROMOÇÃO</div>
+        <div>PROMOÇÃO</div><div>PROMOÇÃO</div><div>PROMOÇÃO</div><div>PROMOÇÃO</div>
+        <div>PROMOÇÃO</div><div>PROMOÇÃO</div>
+      </div>
+
+
+      <!-- ── conteúdo ── -->
+      <div class="relative flex flex-col items-start gap-10 px-6 md:flex-row md:items-center md:gap-[2%] md:px-0 md:pb-0 md:pl-[10.3%] md:pt-0">
+
+        <div class="w-full md:w-[38%]">
+          <p class="text-sm font-semibold text-coral md:text-[1.56cqw]">Mês dos Psicólogos</p>
+
+          <h1 class="mt-3 text-4xl font-bold leading-[1.32] text-white md:mt-[1.6cqw] md:text-[3.4cqw]">
+            Landing Page<br />
+            Profissional para<br />
+            <span class="box-decoration-clone bg-terra px-[0.26em] py-[0.1em]">Psicólogos</span>
+          </h1>
+
+          <p class="mt-6 text-base leading-[1.8] text-white md:mt-[3.4cqw] md:text-[1.56cqw] md:max-w-[26.6cqw]">
+            Fortaleça sua presença online com uma
+            <mark class="box-decoration-clone bg-terra px-[0.2em] py-[0.12em] text-white">página profissional</mark>
+            que transmite confiança e facilita o contato com novos pacientes.
+          </p>
+
+          <a data-wa
+             class="mt-8 inline-block rounded-[0.5em] bg-sage px-[1.4em] py-[0.8em] text-sm font-medium text-white transition hover:brightness-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white md:mt-[3.6cqw] md:py-[0.62em] md:text-[1.25cqw]">
+            Quero minha Landing Page
+          </a>
+        </div>
+
+        <!-- mockup + etiquetas flutuantes (absolute apenas para as etiquetas) -->
+        <div class="relative w-full md:w-auto md:flex-1">
+          <img src="public/mockups-hero.webp"
+               alt="Notebook e celular exibindo o site de uma psicóloga"
+               width="812" height="666"
+               class="w-full" />
+
+          <!-- durações e atrasos diferentes para as três não flutuarem em bloco -->
+          <span class="tag absolute left-[12%] top-[6%] hidden md:inline-block">presença digital</span>
+          <span class="tag absolute -left-[6.4%] top-[22%] hidden md:inline-block [animation-delay:-2.2s] [animation-duration:7.5s]">você nas pesquisas do Google</span>
+          <span class="tag absolute left-[30%] top-[86%] hidden md:inline-block [animation-delay:-4.5s] [animation-duration:6.8s]">página para bio de brinde</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- espaço vinho abaixo do hero: a faixa de benefícios sobe por cima dele -->
+    <div class="h-16 md:h-28" aria-hidden="true"></div>
+  </section>
+
+  <!-- ── faixa de benefícios: fica a cavalo entre o hero e a seção seguinte ── -->
+  <div class="relative z-10 -mt-16 md:-mt-[54rem]">
+    <div class="mx-auto max-w-6xl px-6">
+      <div class="flex flex-col gap-4 md:flex-row md:items-stretch">
+
+        <img src="public/psicologa.webp"
+             alt="Psicóloga em sessão de atendimento"
+             width="313" height="246"
+             class="h-56 w-full rounded-2xl object-cover md:h-auto md:w-[26%]" />
+
+        <div class="flex-1 rounded-3xl bg-wine-deep p-4 md:p-5">
+          <div class="grid h-full gap-4 md:grid-cols-3">
+
+            <div class="rounded-2xl bg-white/[0.055] p-5">
+              <h3 class="text-sm font-semibold leading-snug text-white">Mais<br />profissionalismo</h3>
+              <p class="mt-3 text-xs leading-relaxed text-white/75">Tenha uma página personalizada com sua identidade visual.</p>
+            </div>
+
+            <div class="rounded-2xl bg-white/[0.055] p-5">
+              <h3 class="text-sm font-semibold leading-snug text-white">Mais Confiança</h3>
+              <p class="mt-3 text-xs leading-relaxed text-white/75">Apresente sua formação, abordagem e especialidades.</p>
+            </div>
+
+            <div class="rounded-2xl bg-white/[0.055] p-5">
+              <h3 class="text-sm font-semibold leading-snug text-white">Centralize suas informações</h3>
+              <p class="mt-3 text-xs leading-relaxed text-white/75">Tudo em um único endereço profissional.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════ O QUE ESTÁ INCLUSO ═══════════════════════ -->
+  <section id="receber" class="scroll-mt-16 bg-cream py-20 md:py-28">
+    <div class="mx-auto max-w-5xl px-6">
+      <h2 class="text-center text-2xl font-bold text-ink md:text-3xl">O que você vai Receber!</h2>
+      <p class="mx-auto mt-4 max-w-2xl text-center text-sm leading-relaxed text-ink/80 md:text-base">
+        Sua landing page será composta pelas seções
+        <strong class="font-semibold text-ink">Hero</strong>,
+        <strong class="font-semibold text-ink">Sobre Mim</strong>,
+        <strong class="font-semibold text-ink">Serviços</strong> e
+        <strong class="font-semibold text-ink">Contato</strong>,
+        organizadas para apresentar seu trabalho de forma profissional, gerar confiança e facilitar
+        que novos pacientes entrem em contato com você.
+      </p>
+
+      <div class="mt-14 space-y-12 md:space-y-16">
+
+        <!-- 1 -->
+        <div class="flex flex-col md:flex-row md:items-center">
+          <img src="public/secao-hero.webp"
+               alt="Prévia da seção Hero de uma landing page de psicóloga"
+               width="1536" height="1024" loading="lazy"
+               class="w-full rounded-xl shadow-lg md:w-[46%]" />
+          <div class="relative z-10 -mt-6 mx-4 rounded-lg bg-terra px-6 py-5 shadow-lg md:mx-0 md:-ml-12 md:mt-0 md:w-[46%]">
+            <p class="text-[10px] font-medium uppercase tracking-[0.2em] text-white/70">Seção</p>
+            <h3 class="mt-1 text-lg font-semibold text-white">Hero personalizado</h3>
+            <p class="mt-1 text-sm text-white/85">Uma primeira impressão profissional com seu nome, especialidade, CRP, chamada principal e botões para contato imediato.</p>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="flex flex-col md:flex-row md:items-center md:pl-16">
+          <img src="public/secao-about.webp"
+               alt="Prévia da seção Sobre Mim"
+               width="1536" height="1024" loading="lazy"
+               class="w-full rounded-xl shadow-lg md:w-[46%]" />
+          <div class="relative z-10 -mt-6 mx-4 rounded-lg bg-terra px-6 py-5 shadow-lg md:mx-0 md:-ml-12 md:mt-0 md:w-[46%]">
+            <p class="text-[10px] font-medium uppercase tracking-[0.2em] text-white/70">Seção</p>
+            <h3 class="mt-1 text-lg font-semibold text-white">Sobre Mim</h3>
+            <p class="mt-1 text-sm text-white/85">Um espaço para apresentar sua trajetória, formação, abordagem terapêutica e criar conexão com quem visita sua página.</p>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="flex flex-col md:flex-row md:items-center">
+          <img src="public/secao-service.webp"
+               alt="Prévia da seção Serviços"
+               width="1536" height="1024" loading="lazy"
+               class="w-full rounded-xl shadow-lg md:w-[46%]" />
+          <div class="relative z-10 -mt-6 mx-4 rounded-lg bg-terra px-6 py-5 shadow-lg md:mx-0 md:-ml-12 md:mt-0 md:w-[46%]">
+            <p class="text-[10px] font-medium uppercase tracking-[0.2em] text-white/70">Seção</p>
+            <h3 class="mt-1 text-lg font-semibold text-white">Serviços</h3>
+            <p class="mt-1 text-sm text-white/85">Apresente de forma clara os atendimentos que oferece, como atendimento presencial, online, palestras, workshops ou outras especialidades.</p>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="flex flex-col md:flex-row md:items-center md:pl-16">
+          <img src="public/secao-contact.webp"
+               alt="Prévia da seção Contato"
+               width="1536" height="1024" loading="lazy"
+               class="w-full rounded-xl shadow-lg md:w-[46%]" />
+          <div class="relative z-10 -mt-6 mx-4 rounded-lg bg-terra px-6 py-5 shadow-lg md:mx-0 md:-ml-12 md:mt-0 md:w-[46%]">
+            <p class="text-[10px] font-medium uppercase tracking-[0.2em] text-white/70">Seção</p>
+            <h3 class="mt-1 text-lg font-semibold text-white">Contato</h3>
+            <p class="mt-1 text-sm text-white/85">Todas as formas de contato com você com links direto para WhatsApp, redes sociais, formulário e endereço físico com Integração Google Maps (opcional).</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ LINK DA BIO (BRINDE) ═══════════════════════ -->
+  <!-- sem overflow-hidden: o celular precisa transbordar a faixa de fundo -->
+  <section id="brinde" class="relative scroll-mt-16 bg-wine">
+    <!-- o clip fica só no decorativo, para não cortar o celular -->
+    <div class="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
+      <div class="absolute -right-[20%] -top-[30%] h-[160%] w-[95%] bg-terra blob-bio md:-right-[12%] md:w-[62%]"></div>
+    </div>
+
+    <div class="relative mx-auto flex max-w-6xl flex-col items-start gap-10 px-6 py-16 md:flex-row md:items-center md:justify-between md:py-20">
+
+      <div class="max-w-md">
+        <h2 class="text-2xl font-bold leading-snug text-white md:text-3xl">Ganhe um Link da Bio<br />Personalizado</h2>
+        <p class="mt-4 text-sm leading-relaxed text-white/85">
+          Você terá um Link da Bio personalizado para organizar seus principais links em uma única página moderna, facilitando o acesso dos pacientes aos seus canais de contato e fortalecendo sua presença digital.
+        </p>
+        <a data-wa
+           class="mt-8 inline-block rounded-lg bg-sage px-6 py-3 text-sm font-medium text-wine-deep transition hover:brightness-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">
+          Quero minha Landing Page
+        </a>
+      </div>
+
+      <div class="flex w-full items-center justify-center gap-0 md:w-auto">
+        <ul class="flex min-w-0 flex-col items-end gap-4 md:-mr-10 md:gap-8">
+          <li class="rounded-md bg-white px-4 py-2 text-xs font-medium text-ink shadow-sm md:text-[13px]">bio do instagram</li>
+          <li class="rounded-md bg-white px-4 py-2 text-xs font-medium text-ink shadow-sm md:text-[13px]">brinde</li>
+          <li class="rounded-md bg-white px-4 py-2 text-xs font-medium text-ink shadow-sm md:text-[13px]">links em um só lugar</li>
+        </ul>
+
+        <!-- a margem negativa é maior que o padding da seção, então o celular
+             estoura a faixa de fundo em cima e embaixo -->
+        <img src="public/banner-phone.png"
+             alt="Celular exibindo uma página de link da bio"
+             width="434" height="493"
+             class="ml-4 w-[42%] max-w-44 shrink-0 md:ml-0 md:-my-36 md:h-[30rem] md:w-auto md:max-w-none" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ OFERTA ═══════════════════════ -->
+  <section id="oferta" class="scroll-mt-16 bg-cream py-20 md:py-28">
+    <div class="mx-auto max-w-2xl px-6 text-center">
+      <h2 class="text-2xl font-bold text-ink md:text-3xl">Condição Especial de Agosto</h2>
+      <p class="mt-3 text-sm text-ink/80">
+        Válida para contratos fechados até
+        <mark class="whitespace-nowrap rounded bg-wine-deep px-1.5 py-0.5 font-medium text-white">17 de agosto.</mark>
+      </p>
+
+      <div class="mt-8 overflow-hidden rounded-[2rem] bg-coral shadow-xl">
+
+        <div class="px-6 pb-8 pt-11 md:px-10">
+          <h3 class="text-xl font-semibold text-wine-deep md:text-2xl">Landing Page Personalizada</h3>
+
+          <p class="mt-6">
+            <span class="rounded-full bg-sage px-4 py-1.5 text-sm font-medium text-wine-deep">30% de desconto</span>
+          </p>
+          <p class="mt-4 text-sm text-wine-deep/70">de R$1440 por</p>
+        </div>
+
+        <!-- faixa escura sangrando de ponta a ponta do cartão -->
+        <div class="bg-wine-deep px-6 py-9">
+          <p class="flex items-baseline justify-center gap-2.5">
+            <span class="text-xl font-medium text-white md:text-2xl">R$</span>
+            <span class="text-6xl font-bold leading-none tracking-tight text-white md:text-7xl">999</span>
+          </p>
+          <p class="mt-5 text-xs text-white/70 md:text-sm">ou 5x de R$ 220 no cartão*
+        </div>
+
+        <div class="px-6 pb-10 pt-9 md:px-10">
+          <a data-wa
+             class="inline-block rounded-lg bg-terra px-6 py-3 text-sm font-semibold text-white transition hover:brightness-110 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-wine-deep">
+            Quero minha Landing Page
+          </a>
+          <p class="mt-5 text-xs text-wine-deep/70">Entrega em até 10 dias úteis.</p>
+        </div>
+      </div>
+
+      <div>
+          <h4 class="mt-14 text-base font-semibold">O que está incluso</h4>
+
+          <!-- ícone definido uma vez em <symbol id="ico-check"> e reusado via <use> -->
+          <ul class="mx-auto mt-6 max-w-4xl text-left sm:columns-2 sm:gap-x-8">
+             <li class="flex items-start gap-3 pb-4 text-sm leading-snug break-inside-avoid">
+              <svg class="mt-px h-5 w-5 shrink-0" aria-hidden="true"><use href="#ico-check" /></svg>
+              <span>Link da Bio personalizado <strong class="font-semibold">(Brinde)</strong></span>
+            </li>
+            <li class="flex items-start gap-3 pb-4 text-sm leading-snug break-inside-avoid">
+              <svg class="mt-px h-5 w-5 shrink-0" aria-hidden="true"><use href="#ico-check" /></svg>
+              Layout e design personalizado
+            </li>
+            <li class="flex items-start gap-3 pb-4 text-sm leading-snug break-inside-avoid">
+              <svg class="mt-px h-5 w-5 shrink-0" aria-hidden="true"><use href="#ico-check" /></svg>
+              SEO básico (estrutura otimizada para Google)
+            </li>
+            <li class="flex items-start gap-3 pb-4 text-sm leading-snug break-inside-avoid">
+              <svg class="mt-px h-5 w-5 shrink-0" aria-hidden="true"><use href="#ico-check" /></svg>
+              Botões para WhatsApp e redes sociais
+            </li>
+            <li class="flex items-start gap-3 pb-4 text-sm leading-snug break-inside-avoid">
+              <svg class="mt-px h-5 w-5 shrink-0" aria-hidden="true"><use href="#ico-check" /></svg>
+              Formulário de contato
+            </li>
+           
+            <li class="flex items-start gap-3 pb-4 text-sm leading-snug break-inside-avoid">
+              <svg class="mt-px h-5 w-5 shrink-0" aria-hidden="true"><use href="#ico-check" /></svg>
+              Integração com Google Maps (caso atenda presencialmente)
+            </li>
+            <li class="flex items-start gap-3 pb-4 text-sm leading-snug break-inside-avoid">
+              <svg class="mt-px h-5 w-5 shrink-0" aria-hidden="true"><use href="#ico-check" /></svg>
+              Integração com Google Analytics (opcional)
+            </li>
+              <li class="flex items-start gap-3 pb-4 text-sm leading-snug break-inside-avoid">
+              <svg class="mt-px h-5 w-5 shrink-0" aria-hidden="true"><use href="#ico-check" /></svg>
+              Landing Page responsiva (celular, tablet e computador)
+            </li>
+            <li class="flex items-start gap-3 pb-4 text-sm leading-snug break-inside-avoid">
+              <svg class="mt-px h-5 w-5 shrink-0" aria-hidden="true"><use href="#ico-check" /></svg>
+              Otimização de velocidade
+            </li>
+            <li class="flex items-start gap-3 pb-4 text-sm leading-snug break-inside-avoid">
+              <svg class="mt-px h-5 w-5 shrink-0" aria-hidden="true"><use href="#ico-check" /></svg>
+              Hospedagem
+            </li>
+            <li class="flex items-start gap-3 pb-4 text-sm leading-snug break-inside-avoid">
+              <svg class="mt-px h-5 w-5 shrink-0" aria-hidden="true"><use href="#ico-check" /></svg>
+              Certificado SSL (HTTPS)
+            </li>
+            <li class="flex items-start gap-3 pb-4 text-sm leading-snug break-inside-avoid">
+              <svg class="mt-px h-5 w-5 shrink-0" aria-hidden="true"><use href="#ico-check" /></svg>
+              Publicação da página
+            </li>
+            <li class="flex items-start gap-3 pb-4 text-sm leading-snug break-inside-avoid">
+              <svg class="mt-px h-5 w-5 shrink-0" aria-hidden="true"><use href="#ico-check" /></svg>
+              Suporte após a entrega (7 dias)
+            </li>
+          </ul>
+      </div>
+
+      <p class="mt-8 text-xs text-ink/70">
+        Para iniciar o projeto você só precisa enviar:
+        <strong class="font-semibold text-ink">Logo, suas Fotos e Textos</strong>
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ PERGUNTAS FREQUENTES ═══════════════════════ -->
+  <!-- <details name="faq"> = acordeão nativo: abrir um fecha os outros, sem JS -->
+  <section id="faq" class="scroll-mt-16 bg-wine-deep py-20 md:py-28">
+    <div class="mx-auto max-w-3xl px-6">
+      <h2 class="text-center text-2xl font-bold text-white md:text-3xl">Perguntas Frequentes</h2>
+      <p class="mx-auto mt-4 max-w-xl text-center text-sm leading-relaxed text-white/70">
+        Reuni aqui as dúvidas mais comuns sobre a landing page e a condição de agosto.
+      </p>
+
+      <div class="mt-12 space-y-3">
+
+        <details name="faq" class="group overflow-hidden rounded-2xl bg-white/[0.055] transition-colors hover:bg-white/[0.09] open:bg-white/[0.09]">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-5 px-5 py-4 text-sm font-semibold text-white focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-sage md:px-7 md:py-5 md:text-base">
+            Essa landing page é um site?
+            <svg class="h-5 w-5 shrink-0 text-sage transition-transform duration-200 group-open:rotate-180" aria-hidden="true"><use href="#ico-chevron" /></svg>
+          </summary>
+          <div class="faq-panel px-5 pb-5 text-sm leading-relaxed text-white/75 md:px-7 md:pb-6">
+            A landing page é uma página profissional desenvolvida para apresentar você, seus serviços e facilitar o contato com novos pacientes. Diferente de um site tradicional, ela reúne todas as informações em uma única página, oferecendo uma experiência simples, moderna e objetiva.
+          </div>
+        </details>
+
+        <details name="faq" class="group overflow-hidden rounded-2xl bg-white/[0.055] transition-colors hover:bg-white/[0.09] open:bg-white/[0.09]">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-5 px-5 py-4 text-sm font-semibold text-white focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-sage md:px-7 md:py-5 md:text-base">
+            Qual a diferença entre uma landing page e um site?
+            <svg class="h-5 w-5 shrink-0 text-sage transition-transform duration-200 group-open:rotate-180" aria-hidden="true"><use href="#ico-chevron" /></svg>
+          </summary>
+          <div class="faq-panel px-5 pb-5 text-sm leading-relaxed text-white/75 md:px-7 md:pb-6">
+            Um site costuma possuir diversas páginas, menus e conteúdos. A landing page concentra as informações essenciais em uma única página, tornando a navegação mais rápida e direcionando o visitante para a principal ação: entrar em contato com você.
+          </div>
+        </details>
+
+        <details name="faq" class="group overflow-hidden rounded-2xl bg-white/[0.055] transition-colors hover:bg-white/[0.09] open:bg-white/[0.09]">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-5 px-5 py-4 text-sm font-semibold text-white focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-sage md:px-7 md:py-5 md:text-base">
+            Posso adicionar um blog no futuro?
+            <svg class="h-5 w-5 shrink-0 text-sage transition-transform duration-200 group-open:rotate-180" aria-hidden="true"><use href="#ico-chevron" /></svg>
+          </summary>
+          <div class="faq-panel px-5 pb-5 text-sm leading-relaxed text-white/75 md:px-7 md:pb-6">
+            Sim. A landing page pode servir como a base da sua presença digital. Quando fizer sentido para o seu momento, ela poderá ser expandida para um site completo com blog e outras funcionalidades, sem que você precise começar do zero.
+          </div>
+        </details>
+
+        <details name="faq" class="group overflow-hidden rounded-2xl bg-white/[0.055] transition-colors hover:bg-white/[0.09] open:bg-white/[0.09]">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-5 px-5 py-4 text-sm font-semibold text-white focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-sage md:px-7 md:py-5 md:text-base">
+            O que está incluso na promoção?
+            <svg class="h-5 w-5 shrink-0 text-sage transition-transform duration-200 group-open:rotate-180" aria-hidden="true"><use href="#ico-chevron" /></svg>
+          </summary>
+          <div class="faq-panel px-5 pb-5 text-sm leading-relaxed text-white/75 md:px-7 md:pb-6">
+            Você recebe uma landing page personalizada com as seções
+            <strong class="font-semibold text-white">Hero</strong>,
+            <strong class="font-semibold text-white">Sobre Mim</strong>,
+            <strong class="font-semibold text-white">Serviços</strong> e
+            <strong class="font-semibold text-white">Contato</strong>, além de um
+            <strong class="font-semibold text-white">Link da Bio personalizado</strong> como brinde.
+          </div>
+        </details>
+
+        <details name="faq" class="group overflow-hidden rounded-2xl bg-white/[0.055] transition-colors hover:bg-white/[0.09] open:bg-white/[0.09]">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-5 px-5 py-4 text-sm font-semibold text-white focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-sage md:px-7 md:py-5 md:text-base">
+            O que preciso enviar para iniciar o projeto?
+            <svg class="h-5 w-5 shrink-0 text-sage transition-transform duration-200 group-open:rotate-180" aria-hidden="true"><use href="#ico-chevron" /></svg>
+          </summary>
+          <div class="faq-panel px-5 pb-5 text-sm leading-relaxed text-white/75 md:px-7 md:pb-6">
+            <p>Para desenvolver sua landing page, você deverá disponibilizar:</p>
+            <ul class="mt-4 space-y-2.5">
+              <li class="flex items-start gap-3">
+                <svg class="mt-px h-5 w-5 shrink-0" aria-hidden="true"><use href="#ico-check" /></svg>
+                Logo (caso possua)
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="mt-px h-5 w-5 shrink-0" aria-hidden="true"><use href="#ico-check" /></svg>
+                Fotos ou imagens
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="mt-px h-5 w-5 shrink-0" aria-hidden="true"><use href="#ico-check" /></svg>
+                Paleta de cores (caso possua)
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="mt-px h-5 w-5 shrink-0" aria-hidden="true"><use href="#ico-check" /></svg>
+                Textos que deseja incluir na página
+              </li>
+            </ul>
+            <p class="mt-4">Se você ainda não tiver alguns desses materiais, podemos orientar sobre as melhores alternativas.</p>
+          </div>
+        </details>
+
+        <details name="faq" class="group overflow-hidden rounded-2xl bg-white/[0.055] transition-colors hover:bg-white/[0.09] open:bg-white/[0.09]">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-5 px-5 py-4 text-sm font-semibold text-white focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-sage md:px-7 md:py-5 md:text-base">
+            Em quanto tempo minha landing page fica pronta?
+            <svg class="h-5 w-5 shrink-0 text-sage transition-transform duration-200 group-open:rotate-180" aria-hidden="true"><use href="#ico-chevron" /></svg>
+          </summary>
+          <div class="faq-panel px-5 pb-5 text-sm leading-relaxed text-white/75 md:px-7 md:pb-6">
+            O prazo de entrega é de até <strong class="font-semibold text-white">10 dias úteis</strong>, contados a partir do recebimento de todo o material necessário.
+          </div>
+        </details>
+
+        <details name="faq" class="group overflow-hidden rounded-2xl bg-white/[0.055] transition-colors hover:bg-white/[0.09] open:bg-white/[0.09]">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-5 px-5 py-4 text-sm font-semibold text-white focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-sage md:px-7 md:py-5 md:text-base">
+            Posso solicitar alterações?
+            <svg class="h-5 w-5 shrink-0 text-sage transition-transform duration-200 group-open:rotate-180" aria-hidden="true"><use href="#ico-chevron" /></svg>
+          </summary>
+          <div class="faq-panel px-5 pb-5 text-sm leading-relaxed text-white/75 md:px-7 md:pb-6">
+            Sim. Após a apresentação da primeira versão, você poderá solicitar ajustes para que a página fique alinhada à sua identidade e às informações do seu consultório.
+          </div>
+        </details>
+
+        <details name="faq" class="group overflow-hidden rounded-2xl bg-white/[0.055] transition-colors hover:bg-white/[0.09] open:bg-white/[0.09]">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-5 px-5 py-4 text-sm font-semibold text-white focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-sage md:px-7 md:py-5 md:text-base">
+            Minha landing page funciona no celular?
+            <svg class="h-5 w-5 shrink-0 text-sage transition-transform duration-200 group-open:rotate-180" aria-hidden="true"><use href="#ico-chevron" /></svg>
+          </summary>
+          <div class="faq-panel px-5 pb-5 text-sm leading-relaxed text-white/75 md:px-7 md:pb-6">
+            Sim. A página será totalmente responsiva, oferecendo uma ótima experiência em celulares, tablets e computadores.
+          </div>
+        </details>
+
+        <details name="faq" class="group overflow-hidden rounded-2xl bg-white/[0.055] transition-colors hover:bg-white/[0.09] open:bg-white/[0.09]">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-5 px-5 py-4 text-sm font-semibold text-white focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-sage md:px-7 md:py-5 md:text-base">
+            Ela pode ser encontrada no Google?
+            <svg class="h-5 w-5 shrink-0 text-sage transition-transform duration-200 group-open:rotate-180" aria-hidden="true"><use href="#ico-chevron" /></svg>
+          </summary>
+          <div class="faq-panel px-5 pb-5 text-sm leading-relaxed text-white/75 md:px-7 md:pb-6">
+            Sim. A landing page cria uma presença profissional na internet e pode ser encontrada por pessoas que pesquisarem pelo seu nome ou serviços. Além disso, ela serve como destino para campanhas de anúncios e pode evoluir com estratégias de SEO ao longo do tempo.
+          </div>
+        </details>
+
+        <details name="faq" class="group overflow-hidden rounded-2xl bg-white/[0.055] transition-colors hover:bg-white/[0.09] open:bg-white/[0.09]">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-5 px-5 py-4 text-sm font-semibold text-white focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-sage md:px-7 md:py-5 md:text-base">
+            Posso divulgar minha landing page nas redes sociais?
+            <svg class="h-5 w-5 shrink-0 text-sage transition-transform duration-200 group-open:rotate-180" aria-hidden="true"><use href="#ico-chevron" /></svg>
+          </summary>
+          <div class="faq-panel px-5 pb-5 text-sm leading-relaxed text-white/75 md:px-7 md:pb-6">
+            Sim. Você poderá compartilhar o link no Instagram, WhatsApp, Facebook, LinkedIn, e-mail, anúncios e qualquer outro canal. Além disso, você receberá um <strong class="font-semibold text-white">Link da Bio personalizado</strong> para centralizar seus principais links em uma única página.
+          </div>
+        </details>
+
+        <details name="faq" class="group overflow-hidden rounded-2xl bg-white/[0.055] transition-colors hover:bg-white/[0.09] open:bg-white/[0.09]">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-5 px-5 py-4 text-sm font-semibold text-white focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-sage md:px-7 md:py-5 md:text-base">
+            Até quando vale a promoção?
+            <svg class="h-5 w-5 shrink-0 text-sage transition-transform duration-200 group-open:rotate-180" aria-hidden="true"><use href="#ico-chevron" /></svg>
+          </summary>
+          <div class="faq-panel px-5 pb-5 text-sm leading-relaxed text-white/75 md:px-7 md:pb-6">
+            A condição especial é válida para contratos fechados até <strong class="font-semibold text-white">17 de agosto</strong>, durante a campanha do Mês dos Psicólogos.
+          </div>
+        </details>
+
+        <details name="faq" class="group overflow-hidden rounded-2xl bg-white/[0.055] transition-colors hover:bg-white/[0.09] open:bg-white/[0.09]">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-5 px-5 py-4 text-sm font-semibold text-white focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-sage md:px-7 md:py-5 md:text-base">
+            Quais são as formas de pagamento?
+            <svg class="h-5 w-5 shrink-0 text-sage transition-transform duration-200 group-open:rotate-180" aria-hidden="true"><use href="#ico-chevron" /></svg>
+          </summary>
+          <div class="faq-panel px-5 pb-5 text-sm leading-relaxed text-white/75 md:px-7 md:pb-6">
+            <p>Você pode contratar por:</p>
+            <ul class="mt-4 space-y-2.5">
+              <li class="flex items-start gap-3">
+                <svg class="mt-px h-5 w-5 shrink-0" aria-hidden="true"><use href="#ico-check" /></svg>
+                <span><strong class="font-semibold text-white">R$ 999,00 à vista</strong></span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="mt-px h-5 w-5 shrink-0" aria-hidden="true"><use href="#ico-check" /></svg>
+                <span><strong class="font-semibold text-white">5x de R$ 220,00 no cartão*</strong></span>
+              </li>
+            </ul>
+            <p class="mt-4 text-xs text-white/60">*Consulte as condições de parcelamento.</p>
+          </div>
+        </details>
+
+        <details name="faq" class="group overflow-hidden rounded-2xl bg-white/[0.055] transition-colors hover:bg-white/[0.09] open:bg-white/[0.09]">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-5 px-5 py-4 text-sm font-semibold text-white focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-sage md:px-7 md:py-5 md:text-base">
+            Para quem essa landing page é indicada?
+            <svg class="h-5 w-5 shrink-0 text-sage transition-transform duration-200 group-open:rotate-180" aria-hidden="true"><use href="#ico-chevron" /></svg>
+          </summary>
+          <div class="faq-panel px-5 pb-5 text-sm leading-relaxed text-white/75 md:px-7 md:pb-6">
+            Para psicólogos que desejam fortalecer sua presença digital, transmitir mais credibilidade, facilitar o contato com novos pacientes e ter uma página profissional para divulgar seu trabalho.
+          </div>
+        </details>
+
+      </div>
+
+      <p class="mt-12 text-center text-lg text-white/70">
+        Ficou com outra dúvida?
+        <a data-wa class="font-semibold text-sage underline-offset-4 hover:underline">Me chama no WhatsApp</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ RODAPÉ ═══════════════════════ -->
+  <footer class="bg-wine">
+    <div class="border-t border-white/10">
+      <div class="mx-auto flex max-w-5xl flex-col items-center justify-between gap-4 px-6 py-6 sm:flex-row">
+        <div class="flex items-center gap-3">
+          <img src="public/renata.webp" alt="Renata Karolina" width="752" height="752"
+               class="h-10 w-10 rounded-full object-cover" />
+          <div class="text-left">
+            <p class="text-xs text-white">Renata Karolina | Desenvolvedora Web</p>
+            <a href="https://portifolio.rerko.net/" target="_blank" rel="noopener"
+               class="text-[11px] font-semibold uppercase tracking-[0.15em] text-sage hover:underline">Portfólio</a>
+          </div>
+        </div>
+
+        <a data-wa class="text-sm font-semibold text-sage hover:underline">WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ⬇️ Preencha com o número (DDI + DDD + número, só dígitos)
+    const WHATSAPP = "5567991687767";
+    const MENSAGEM = "Olá Renata! Quero minha Landing Page para psicólogos.";
+
+    const href = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(MENSAGEM)}`;
+    document.querySelectorAll("[data-wa]").forEach((el) => {
+      el.setAttribute("href", href);
+      el.setAttribute("target", "_blank");
+      el.setAttribute("rel", "noopener");
+    });
+
+    // header ganha fundo sólido assim que a sentinela do topo sai da viewport.
+    // IntersectionObserver em vez de listener de scroll: dispara sozinho no load
+    // (inclusive quando o navegador restaura a posição) e não roda a cada frame.
+    const header = document.querySelector("[data-header]");
+    new IntersectionObserver(
+      ([entrada]) => header.classList.toggle("is-stuck", !entrada.isIntersecting),
+      { threshold: 0 },
+    ).observe(document.querySelector("[data-topo]"));
+
+    // o <details> não fecha sozinho ao navegar para a âncora
+    const menu = document.querySelector("[data-menu]");
+    menu.querySelectorAll("a").forEach((a) => {
+      a.addEventListener("click", () => (menu.open = false));
+    });
+    addEventListener("keydown", (e) => {
+      if (e.key === "Escape") menu.open = false;
+    });
+  </script>
+
+</body>
+</html>

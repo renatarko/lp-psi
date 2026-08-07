@@ -1,0 +1,5 @@
+node_modules/
+.DS_Store
+
+# permissões locais do Claude Code, específicas desta máquina
+.claude/settings.local.json
