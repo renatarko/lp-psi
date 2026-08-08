@@ -307,18 +307,20 @@
       </div>
 
       <div class="flex w-full items-center justify-center gap-0 md:w-auto">
-        <ul class="flex min-w-0 flex-col items-end gap-4 md:-mr-10 md:gap-8">
-          <li class="rounded-md bg-white px-4 py-2 text-xs font-medium text-ink shadow-sm md:text-[13px]">bio do instagram</li>
-          <li class="rounded-md bg-white px-4 py-2 text-xs font-medium text-ink shadow-sm md:text-[13px]">brinde</li>
-          <li class="rounded-md bg-white px-4 py-2 text-xs font-medium text-ink shadow-sm md:text-[13px]">links em um só lugar</li>
+        <!-- mesmas etiquetas de vidro do hero; durações diferentes para as três
+             não flutuarem em bloco -->
+        <ul class="relative z-10 -mr-6 flex flex-col items-end gap-4 md:-mr-10 md:gap-8">
+          <li class="tag">bio do instagram</li>
+          <li class="tag [animation-delay:-2.2s] [animation-duration:7.5s]">brinde</li>
+          <li class="tag [animation-delay:-4.5s] [animation-duration:6.8s]">links em um só lugar</li>
         </ul>
 
         <!-- a margem negativa é maior que o padding da seção, então o celular
-             estoura a faixa de fundo em cima e embaixo -->
+             estoura a faixa de fundo: só embaixo no mobile, em cima e embaixo no desktop -->
         <img src="public/banner-phone.png"
              alt="Celular exibindo uma página de link da bio"
              width="434" height="493"
-             class="ml-4 w-[42%] max-w-44 shrink-0 md:ml-0 md:-my-36 md:h-[30rem] md:w-auto md:max-w-none" />
+             class="-mb-28 w-[54%] max-w-64 shrink-0 self-end md:-mt-36 md:-mb-36 md:h-[clamp(16rem,40vw,30rem)] md:w-auto md:max-w-none md:self-center" />
       </div>
     </div>
   </section>

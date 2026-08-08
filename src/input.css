@@ -82,7 +82,9 @@
   isolation: isolate;
   white-space: nowrap;
   border-radius: 9999px;
-  font-size: 14px;
+  /* 14px é o tamanho do hero (desktop); no brinde as etiquetas aparecem ao lado
+     do celular em telas estreitas, então encolhem até caber sem quebrar a linha */
+  font-size: clamp(11px, 3.4vw, 14px);
   font-weight: 600;
   letter-spacing: 0.01em;
   padding: 0.6em 1.15em;
